@@ -1,0 +1,23 @@
+-----------------------------------------------------
+-------------- Policy Description--------------------
+-----------------------------------------------------
+Premium account 
+1. School
+    a. Personalized (Hymn, vision, mission, tagline, images)
+    b. open all Platforms
+    c. 
+
+2. Professor
+    a. Personalized account and subjects
+    b. 
+
+3. Students
+    a. Guardian can use system
+    b. Personalized account
+    c. mind games
+
+4. no Adds/Commercial
+
+5. bonus points
+
+6. free premium account for students(10)

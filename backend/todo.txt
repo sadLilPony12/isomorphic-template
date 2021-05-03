@@ -1,0 +1,112 @@
+1. data gathering
+    a. lesson plan
+    b. 
+
+2. school calendar
+    
+    
+Data in the Learner Information System (LIS)
+Basic personal data of the learner
+Enrollment history (formal and non-formal)
+Classes and class advisers (for formal)
+Learning facilitators (for ALS and Abot-Alam)
+Grades and evaluation results;
+***Indication of benefits (4Ps, CCT, ESC, QVR)
+Health and nutritional status
+
+
+--------------------------------------------------------
+--------------- Marketing strategic---------------------
+--------------------------------------------------------
+"Do you want your School to be a Smart Campus"
+a Paperless School?
+
+------------------------------------------------------------------------
+--------------- a dozen and more reason to avail us: -------------------
+------------------------------------------------------------------------
+***Headquearters
+1. Enrollment system
+2. School Forms (1-10)
+3. Library system
+4. e-Voting system
+5. tabulations system
+6. admission/Online Examination system
+7. Inventory system
+8. Accounting system
+9. DTR system
+10. Calendar of Activities
+11. data-tracking system
+12. General Appropriate Act system
+13. Online Accreditaion System
+14. Express Assistance system
+15. School Clinic System
+16. Android/IOS app
+17. Class Management System
+
+
+we suport indigent/less fortunate
+    *** free
+
+an adviser can recommend a less fortunate/ indigent student to avail free of charge, and then approved by the head.
+
+
+------------------------------------------------------------------
+---------------Participating Merchants ----------------------------
+------------------------------------------------------------------
+Can avail discounts/priorities to the following participating merchants:
+***Target to provide MOA
+1. Pandayan Bookstore
+2. National Bookstore
+3. *** fastfood chains (Jollibee)
+4. *** dept. store (SM)
+5. *** bank (PNB)
+6. *** Places(enchanted kingdom)
+7. *** grocery/supermarket
+8. *** hardwares(ACE, DIY)
+9. *** convenient stores (7/11)
+
+
+----------------------------------------------------
+----------------- Push New Project -----------------
+----------------------------------------------------
+$ git init -b main
+$ git init -b main
+$ git remote add origin https://Sam-toro@bitbucket.org/technowiz_solution_provider/enrollment-system-backend.git
+
+
+
+Indication of benefits (4Ps, CCT, ESC, QVR)
+Health and nutritional status
+
+
+Application
+    1. New Student
+    2. Transferee
+    3. staff
+    4. applicant
+
+
+***voucher ng (7,500) Transferee
+
+***Transfer school
+
+Emman suggestions:
+1. Report Card
+2. student list.(LRN, Guardian)
+3. PTA confirmation on attending 
+4. GPTA
+5. Awards- notify only
+6. Property custodian(Books)
+7. Auto compute grades
+8. grades pass on adviser, report all submitted grades (by adviser, Notification on subjects)
+9. Administrative officer(General services)
+10. GAA-Classroom Observation tool(COT)-head, master, principal with schedule
+11. score counter
+12. starnd | tracking
+SHS: Track=HUMSS, GAS, System
+TVL=ICT,HOME(STARND)
+***13. Plantilla of staff(status: permanent, provisional)
+14. meeting of faculty
+
+
+8809178979279(joms)
