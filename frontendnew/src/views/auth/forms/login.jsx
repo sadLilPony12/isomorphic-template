@@ -36,7 +36,7 @@ const getDefaultUrl = role => {
 const getDeafultPlatform = role => {
     console.log(role);
     switch (role) {
-        case 'dev': return 'aHeadquarter'
+        case 'dev': return 'aForbidden'
         case 'superadmin':
         case 'principal': return 'aHeadquarter'
         case 'admin': return 'aEnrollment'

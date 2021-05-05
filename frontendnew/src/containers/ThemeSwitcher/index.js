@@ -64,38 +64,8 @@ class ThemeSwitcher extends Component {
               tab={<span><FontAwesomeIcon icon={faCogs} />Settings</span>} key="2">
               <MDBContainer>
                 <MDBListGroup>
-                  <Link to="/smis/schools">
-                    <MDBListGroupItem>This School</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/school/organizational/chart">
-                    <MDBListGroupItem>Organizational Chart</MDBListGroupItem>
-                  </Link>
-                  <Link to="#">
-                    <MDBListGroupItem>LEDGER'S</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/applicants">
-                    <MDBListGroupItem>Applicant's</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/employees">
-                    <MDBListGroupItem>Employees</MDBListGroupItem>
-                  </Link>
-                  <Link to="#">
-                    <MDBListGroupItem>Access</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/batches">
-                    <MDBListGroupItem>Batches</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/levels">
-                    <MDBListGroupItem>Year Levels</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/sections">
-                    <MDBListGroupItem>Sections</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/subjects">
-                    <MDBListGroupItem>Subjects</MDBListGroupItem>
-                  </Link>
-                  <Link to="/smis/rooms">
-                    <MDBListGroupItem>Rooms</MDBListGroupItem>
+                  <Link to="../../smis/pinagbabawal/roles">
+                    <MDBListGroupItem>Roles</MDBListGroupItem>
                   </Link>
                 </MDBListGroup>
               </MDBContainer>
