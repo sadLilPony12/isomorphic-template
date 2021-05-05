@@ -8,9 +8,10 @@ import { IntlProvider } from 'react-intl';
 import themes from './config/themes';
 import { themeConfig } from './config';
 import DashAppHolder from './dashAppStyle';
+// import 'antd/dist/antd.css';
 
 const DashApp = () => (
-  <LocaleProvider >
+  <LocaleProvider>
     <IntlProvider>
       <ThemeProvider theme={themes[themeConfig.theme]}>
         <DashAppHolder>

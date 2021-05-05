@@ -6,57 +6,22 @@ import WindowResizeListener from 'react-window-size-listener';
 import { ThemeProvider } from 'styled-components';
 import authAction from '../../redux/auth/actions';
 import appActions from '../../redux/app/actions';
-
+import Sidebar from '../Sidebar/index';
 import Topbar from '../Topbar/Topbar';
 import ThemeSwitcher from '../../containers/ThemeSwitcher';
-
 import AppRouter from './AppRouter';
 import { siteConfig } from '../../config.js';
 import themes from '../../config/themes';
 import AppHolder from './commonStyle';
-import "./global.css";
-import "./scss/style.scss";
-
-import {
-  sClassroom,
-  fClassroom, fTracking,
-  aHeadquarter, aTracking,
-  Forbidden
-} from '../Sidebar';
+import './global.css';
 
 const { Content, Footer } = Layout;
 const { logout } = authAction;
 const { toggleAll } = appActions;
-const getSidebar = (sp) => {
-  switch (sp) {
-    // Student
-    case 'sClassroom': return sClassroom
-    // Faculty
-    case 'fClassroom': return fClassroom
-    case 'fTracking': return fTracking
-    // Admin
-    case 'aHeadquarter': return aHeadquarter
-    case 'aTracking': return aTracking
-    case 'aForbidden': return Forbidden
-    default: console.log('None of the above')
-  }
-}
-
 export class App extends Component {
-  constructor(props) {
-    super(props);
-    this.auth = JSON.parse(localStorage.getItem('auth'));
-    this.advisory = JSON.parse(localStorage.getItem('advisory'));
-    this.newbies = this.auth.role_id === "60764981ea6c0000fa00595b" || this.auth.role_id === "6028f7713e320000f40026c2" ? this.advisory ? true : false : true;
-    this.state = { platform: this.auth.currentApp }
-    // this.newbies = this.advisory ? true : this.auth.role_id ? true : false; // ?
-  }
-
   render() {
     const { url } = this.props.match;
-    const { selectedTheme, selectedPlatform } = this.props;
-    const Sidebar = getSidebar(selectedPlatform || this.state.platform);
-
+    const { selectedTheme } = this.props;
     return (
       <LocaleProvider>
         <ThemeProvider theme={themes[selectedTheme]}>
@@ -73,10 +38,12 @@ export class App extends Component {
               </Debounce>
               <Topbar url={url} />
               <Layout style={{ flexDirection: 'row', overflowX: 'hidden' }}>
-                {this.newbies && <Sidebar url={url} />}
+                <Sidebar url={url} />
                 <Layout
                   className="isoContentMainLayout"
-                  style={{ height: '100vh' }}>
+                  style={{
+                    height: '100vh',
+                  }}>
                   <Content
                     className="isomorphicContent"
                     style={{
@@ -96,19 +63,19 @@ export class App extends Component {
                   </Footer>
                 </Layout>
               </Layout>
-              {this.newbies && <ThemeSwitcher />}
+              <ThemeSwitcher />
             </Layout>
           </AppHolder>
         </ThemeProvider>
-      </LocaleProvider >
+      </LocaleProvider>
     );
   }
 }
 
 export default connect(
   state => ({
+    auth: state.Auth,
     selectedTheme: state.ThemeSwitcher.toJS().changeThemes.themeName,
-    selectedPlatform: state.PlatformSwitcher.toJS().selectedPlatform.code,
   }),
   { logout, toggleAll }
 )(App);

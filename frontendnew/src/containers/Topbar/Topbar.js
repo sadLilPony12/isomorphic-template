@@ -5,7 +5,7 @@ import appActions from '../../redux/app/actions';
 import TopbarWrapper from './topbar.style';
 import {
   TopbarUser,
-  TopbarPlatforms
+  // TopbarPlatforms
 } from '../../components/topbar';
 
 const { Header } = Layout;
@@ -59,12 +59,6 @@ class Topbar extends Component {
           </ul>
 
           <ul className="isoRight">
-            {is_faculty &&
-              <li onClick={() => this.setState({ selectedItem: 'platform' })} className="isoPlatform">
-                <TopbarPlatforms url={url} />
-              </li>
-            }
-
             <li onClick={() => this.setState({ selectedItem: 'user' })}
               className="isoUser">
               <TopbarUser />
