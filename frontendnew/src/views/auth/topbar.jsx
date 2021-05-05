@@ -33,7 +33,7 @@ export default class extends Component {
             <div>
                 <MDBNavbar className="indigo accent-4" dark expand="md" fixed="top" scrolling>
                     <MDBNavbarBrand className='py-0 font-weight-bold'>
-                        <strong className='align-middle'>eLesson Log Management and iLearning Distribution Portal for Public Secondary Schools</strong>
+                        <strong className='align-middle'>Template</strong>
                     </MDBNavbarBrand>
                     <MDBNavbarNav right>
                         <MDBNavItem>
