@@ -14,12 +14,7 @@ class AppRouter extends React.Component {
           component={asyncComponent(() => import('../../views/actors/schools'))} />
         <Route exact path={`${url}/pinagbabawal/users`}
           component={asyncComponent(() => import('../../views/actors/superadmin'))} />
-        {/* End of Inventory */}
-        {/* -------------------------------------------------------------------------------- */}
-        {/* Debugging pages */}
-        <Route exact path={`${url}/InputField`} component={asyncComponent(() => import('../Forms/Input'))} />
-        <Route exact path={`${url}/calendarAlt`} component={asyncComponent(() => import('../Calendar/Calendar'))} />
-        {/* End of Debugging pages */}
+        {/* End of Forbiden */}
       </Switch >
     );
   }

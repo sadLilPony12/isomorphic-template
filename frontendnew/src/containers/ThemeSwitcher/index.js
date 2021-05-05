@@ -64,7 +64,7 @@ class ThemeSwitcher extends Component {
               tab={<span><FontAwesomeIcon icon={faCogs} />Settings</span>} key="2">
               <MDBContainer>
                 <MDBListGroup>
-                  <Link to="../../smis/pinagbabawal/roles">
+                  <Link to="/smis/pinagbabawal/roles">
                     <MDBListGroupItem>Roles</MDBListGroupItem>
                   </Link>
                 </MDBListGroup>
